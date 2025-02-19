@@ -1,0 +1,17 @@
+[project]
+name = "wechat-copilot"
+version = "0.1.0"
+description = "自动解析微信窗口的聊天内容,结合AI大模型，生成回复建议。"
+authors = [
+    {name = "lisaifei", email = "waltermitty121906@gmail.com"}
+]
+readme = "README.md"
+dependencies = [
+    "pyobjc>=11.0.0",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.10.4",
+]
+
+
+
+
