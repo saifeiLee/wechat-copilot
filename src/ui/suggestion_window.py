@@ -1,4 +1,11 @@
 import rumps
+import os
+
+
+def show_notification(message):
+    os.system(f"""
+        osascript -e 'display notification "{message}" with title "WeChat GPT Assistant" with alert'
+    """)
 
 
 class SuggestionWindow(rumps.App):
@@ -9,6 +16,4 @@ class SuggestionWindow(rumps.App):
     def display_suggestion(self, suggestion):
         """Display the suggestion in a native macOS notification"""
         print(f"Displaying suggestion: {suggestion}")
-        # rumps.notification(
-        #     title="WeChat GPT Assistant", subtitle="Suggestion", message=suggestion
-        # )
+        show_notification(suggestion)
