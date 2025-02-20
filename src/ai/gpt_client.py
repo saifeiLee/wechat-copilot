@@ -15,7 +15,7 @@ class GPTClient:
         """Get suggestion from GPT based on chat messages"""
         try:
             response = self.client.chat.completions.create(
-                model="gpt-4o",
+                model="azure_ptu",
                 messages=[
                     {
                         "role": "system",
@@ -23,7 +23,7 @@ class GPTClient:
                     },
                     {
                         "role": "user",
-                        "content": f"Based on these messages, provide a helpful suggestion and the most likely response: {messages}",
+                        "content": f"Based on these messages, What should I reply: {messages}",
                     },
                 ],
             )

@@ -162,12 +162,12 @@ def get_chat_messages(view):
                     _, role = AXUIElementCopyAttributeValue(
                         ax_row_child, kAXRoleAttribute, None
                     )
-                    print(f"AXRow 的子元素 role: {role}")
+                    # print(f"AXRow 的子元素 role: {role}")
                     if role == "AXCell":
                         _, value = AXUIElementCopyAttributeValue(
                             ax_row_child, kAXValueAttribute, None
                         )
-                        print(f"AXRow 的子元素 value: {value}")
+                        # print(f"AXRow 的子元素 value: {value}")
                         # 找AXCell的子元素
                         _, children_ax_cell = AXUIElementCopyAttributeValue(
                             ax_row_child, kAXChildrenAttribute, None
