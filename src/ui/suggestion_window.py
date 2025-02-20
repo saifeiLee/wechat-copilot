@@ -4,9 +4,11 @@ import pyperclip
 
 
 def show_notification(message):
-    os.system(f"""
-        osascript -e 'display notification "{message}" with title "WeChat GPT Assistant" with alert'
-    """)
+    # 转义消息中的双引号，防止破坏 osascript 命令
+    escaped_message = message.replace('"', '\\"')
+    os.system(f'''
+        osascript -e 'display notification "{escaped_message}" with title "WeChat GPT Assistant"'
+    ''')
     # 自动复制消息到剪贴板
     pyperclip.copy(message)
 
