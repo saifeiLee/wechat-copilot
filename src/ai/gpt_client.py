@@ -19,11 +19,11 @@ class GPTClient:
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are a helpful assistant providing suggestions based on WeChat conversations.",
+                        "content": "You are a helpful assistant providing suggestions based on WeChat conversations.Respond in Chinese.",
                     },
                     {
                         "role": "user",
-                        "content": f"Based on these messages, provide a helpful suggestion: {messages}",
+                        "content": f"Based on these messages, provide a helpful suggestion and the most likely response: {messages}",
                     },
                 ],
             )
