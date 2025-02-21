@@ -8,6 +8,12 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Development Status :: 3 - Alpha",
+]
 dependencies = [
     "pyobjc>=11.0.0",
     "python-dotenv>=1.0.1",
@@ -18,8 +24,12 @@ dependencies = [
     "pyperclip>=1.9.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/saifeiLee/wechat-copilot"
+Repository = "https://github.com/saifeiLee/wechat-copilot.git"
+
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.0.0"]
 build-backend = "hatchling.build"
 
 [project.scripts]
@@ -27,3 +37,6 @@ wechat-copilot = "wechat_copilot.main:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["wechat_copilot"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
