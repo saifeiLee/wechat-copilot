@@ -1,6 +1,6 @@
 [project]
 name = "wechat-copilot"
-version = "0.1.0"
+version = "0.0.1"
 description = "自动解析微信窗口的聊天内容,结合AI大模型，生成回复建议。"
 authors = [
     {name = "lisaifei", email = "waltermitty121906@gmail.com"}
