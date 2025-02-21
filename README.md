@@ -4,6 +4,12 @@
 
 喜欢的话可以点个 🌟star🌟 支持一下。感谢感谢。
 
+## 感谢
+
+项目方案的灵感离不开以下开源项目的启发：
+
+- https://github.com/browser-use/macOS-use
+
 ![演示](docs/demo.gif)
 
 ## 快速安装
