@@ -6,6 +6,8 @@ authors = [
     {name = "lisaifei", email = "waltermitty121906@gmail.com"}
 ]
 readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
 dependencies = [
     "pyobjc>=11.0.0",
     "python-dotenv>=1.0.1",
@@ -15,6 +17,13 @@ dependencies = [
     "pynput>=1.7.7",
     "pyperclip>=1.9.0",
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+wechat-copilot = "src.main:main"
 
 
 

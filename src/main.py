@@ -55,6 +55,11 @@ class WeChatGPTAssistant:
         self.ui.run()
 
 
-if __name__ == "__main__":
+def main():
+    """Entry point for the command-line script"""
     app = WeChatGPTAssistant()
     app.run()
+
+
+if __name__ == "__main__":
+    main()

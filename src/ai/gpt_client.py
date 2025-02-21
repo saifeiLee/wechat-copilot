@@ -2,7 +2,7 @@ import openai
 
 
 class GPTClient:
-    def __init__(self, api_key, base_url):
+    def __init__(self, api_key, base_url="https://api.openai.com/v1"):
         self.api_key = api_key
         openai.api_key = api_key
         openai.base_url = base_url
