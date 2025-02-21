@@ -23,8 +23,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.scripts]
-wechat-copilot = "src.main:main"
+wechat-copilot = "wechat_copilot.main:main"
 
-
-
-
+[tool.hatch.build.targets.wheel]
+packages = ["wechat_copilot"]
