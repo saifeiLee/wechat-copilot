@@ -84,8 +84,9 @@ twine upload dist/*
 
 ## FAQ
 
-Q: 发布到pypi遇到报错: InvalidDistribution: Metadata is missing required fields: Name, Version.
-A: 需要更新pkginfo
+**Q:** 发布到pypi遇到报错: InvalidDistribution: Metadata is missing required fields: Name, Version.
+
+**A:** 需要更新pkginfo
 
 ```bash
 pip install --upgrade pkginfo
